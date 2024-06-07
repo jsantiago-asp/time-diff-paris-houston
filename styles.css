@@ -19,8 +19,12 @@ body {
 }
 
 h1 {
-    margin: 20px 0;
+    margin: 0;
     font-size: 1.5em;
+    background-color: #ce1141; /* Houston Rockets Red */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
 }
 
 .time-difference {
