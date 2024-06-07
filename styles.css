@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.time-difference {
+    padding: 20px;
+}
+
+.houston {
+    background-color: #ce1141; /* Houston Rockets Red */
+    color: white;
+}
+
+.paris {
+    background: linear-gradient(to right, #0055A4, #FFFFFF, #EF4135); /* France Tricolor */
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 50px;
+    padding: 5px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
