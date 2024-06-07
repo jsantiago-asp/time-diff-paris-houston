@@ -27,12 +27,12 @@ h1 {
     padding: 20px;
 }
 
-.houston {
+.paris {
     background-color: #ce1141; /* Houston Rockets Red */
     color: white;
 }
 
-.paris {
+.houston {
     background-color: white;
     color: black;
     border-left: 40px solid #0055A4; /* France Blue */
