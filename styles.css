@@ -33,8 +33,10 @@ h1 {
 }
 
 .paris {
-    background: linear-gradient(to right, #0055A4, #FFFFFF, #EF4135); /* France Tricolor */
-    color: white;
+    background-color: white;
+    color: black;
+    border-left: 20px solid #0055A4; /* France Blue */
+    border-right: 20px solid #EF4135; /* France Red */
 }
 
 label {
@@ -43,7 +45,7 @@ label {
 }
 
 input {
-    width: 50px;
+    width: 80px;
     padding: 5px;
     margin: 0 10px;
     border: none;

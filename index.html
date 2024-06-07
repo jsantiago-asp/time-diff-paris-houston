@@ -11,16 +11,16 @@
         <h1>Houston, We Have a Time Difference</h1>
         <div class="time-difference houston">
             <label for="houstonTime">At 
-                <input type="number" id="houstonTime" min="0" max="23" placeholder="Hour">
-                o'clock in Houston, it will be 
+                <input type="time" id="houstonTime" placeholder="HH:MM">
+                in Houston, it will be 
                 <span id="parisTime">...</span> in Paris.
             </label>
             <button onclick="calculateParisTime()">Calculate</button>
         </div>
         <div class="time-difference paris">
             <label for="parisInputTime">At 
-                <input type="number" id="parisInputTime" min="0" max="23" placeholder="Hour">
-                o'clock in Paris, it will be 
+                <input type="time" id="parisInputTime" placeholder="HH:MM">
+                in Paris, it will be 
                 <span id="houstonOutputTime">...</span> in Houston.
             </label>
             <button onclick="calculateHoustonTime()">Calculate</button>
@@ -29,4 +29,3 @@
     <script src="scripts.js"></script>
 </body>
 </html>
-

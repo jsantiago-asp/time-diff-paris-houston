@@ -1,19 +1,27 @@
 function calculateParisTime() {
-    const houstonHour = parseInt(document.getElementById('houstonTime').value);
-    if (isNaN(houstonHour) || houstonHour < 0 || houstonHour > 23) {
-        alert("Please enter a valid hour between 0 and 23.");
+    const houstonTime = document.getElementById('houstonTime').value;
+    if (!houstonTime) {
+        alert("Please enter a valid time in HH:MM format.");
         return;
     }
-    const parisHour = (houstonHour + 7) % 24;
-    document.getElementById('parisTime').textContent = `${parisHour}:00`;
+
+    const [houstonHour, houstonMinute] = houstonTime.split(':').map(Number);
+    let parisHour = (houstonHour + 7) % 24;
+
+    const parisTime = `${String(parisHour).padStart(2, '0')}:${String(houstonMinute).padStart(2, '0')}`;
+    document.getElementById('parisTime').textContent = parisTime;
 }
 
 function calculateHoustonTime() {
-    const parisHour = parseInt(document.getElementById('parisInputTime').value);
-    if (isNaN(parisHour) || parisHour < 0 || parisHour > 23) {
-        alert("Please enter a valid hour between 0 and 23.");
+    const parisTime = document.getElementById('parisInputTime').value;
+    if (!parisTime) {
+        alert("Please enter a valid time in HH:MM format.");
         return;
     }
-    const houstonHour = (parisHour - 7 + 24) % 24;
-    document.getElementById('houstonOutputTime').textContent = `${houstonHour}:00`;
+
+    const [parisHour, parisMinute] = parisTime.split(':').map(Number);
+    let houstonHour = (parisHour - 7 + 24) % 24;
+
+    const houstonTime = `${String(houstonHour).padStart(2, '0')}:${String(parisMinute).padStart(2, '0')}`;
+    document.getElementById('houstonOutputTime').textContent = houstonTime;
 }
