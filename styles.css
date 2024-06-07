@@ -35,8 +35,8 @@ h1 {
 .paris {
     background-color: white;
     color: black;
-    border-left: 20px solid #0055A4; /* France Blue */
-    border-right: 20px solid #EF4135; /* France Red */
+    border-left: 40px solid #0055A4; /* France Blue */
+    border-right: 40px solid #EF4135; /* France Red */
 }
 
 label {
